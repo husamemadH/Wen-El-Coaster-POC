@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local docs / proposal drafts (not for the public repo)
+Student_Proposal_Template*.docx
+*.docx
