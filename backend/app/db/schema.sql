@@ -1,0 +1,38 @@
+-- PostgreSQL + PostGIS schema. Not applied in this POC.
+--
+-- CREATE EXTENSION IF NOT EXISTS postgis;
+--
+-- CREATE TABLE routes (
+--   id TEXT PRIMARY KEY,
+--   name_en TEXT NOT NULL,
+--   name_ar TEXT NOT NULL,
+--   color TEXT NOT NULL,
+--   polyline geometry(LineString, 4326) NOT NULL,
+--   stops JSONB NOT NULL,
+--   stop_zones geometry(MultiPolygon, 4326)
+-- );
+--
+-- CREATE TABLE coasters (
+--   id TEXT PRIMARY KEY,
+--   route_id TEXT REFERENCES routes(id),
+--   plate TEXT
+-- );
+--
+-- CREATE TABLE coaster_pings (
+--   id BIGSERIAL PRIMARY KEY,
+--   coaster_id TEXT REFERENCES coasters(id),
+--   ts TIMESTAMPTZ NOT NULL,
+--   point geometry(Point, 4326) NOT NULL,
+--   speed_kmh REAL,
+--   source TEXT CHECK (source IN ('driver_app','rider_report'))
+-- );
+-- CREATE INDEX ON coaster_pings USING GIST (point);
+-- CREATE INDEX ON coaster_pings (coaster_id, ts DESC);
+--
+-- CREATE TABLE rider_reports (
+--   id BIGSERIAL PRIMARY KEY,
+--   route_id TEXT REFERENCES routes(id),
+--   point geometry(Point, 4326) NOT NULL,
+--   note TEXT,
+--   reported_at TIMESTAMPTZ NOT NULL
+-- );

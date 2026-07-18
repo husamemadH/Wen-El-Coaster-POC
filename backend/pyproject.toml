@@ -1,0 +1,18 @@
+[project]
+name = "wen-el-coaster-backend"
+version = "0.1.0"
+description = "Backend for the Coaster Tracker POC (skeleton — see README)."
+requires-python = ">=3.11"
+dependencies = [
+    # Intended deps — not installed in this POC:
+    # "fastapi",
+    # "uvicorn[standard]",
+    # "sqlalchemy",
+    # "geoalchemy2",
+    # "psycopg[binary]",
+    # "pydantic",
+    # "shapely",
+    # "scikit-learn",
+    # "lightgbm",
+    # "joblib",
+]

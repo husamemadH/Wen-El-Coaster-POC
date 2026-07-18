@@ -1,0 +1,148 @@
+export const translations = {
+  en: {
+    banner: {
+      tapStopTitle: 'Tap a stop on the line',
+      tapStopHint:
+        'Pick any stop along the highlighted track to see when the next coaster reaches it.',
+      stop: 'Stop',
+      clear: 'Clear',
+      pending: 'PENDING',
+      walkFromYou: (time: string, dist: string) => `${time} walk from you · ${dist}`,
+      awaitingConfirmation: 'Awaiting confirmation',
+      awaitingHint:
+        "Another rider suggested this stop. Coaster ETAs stay hidden until it's verified — otherwise bad or spam suggestions would show fake times.",
+      confirmButton: "✓ I've seen a coaster stop here",
+      coasterInPrefix: 'Coaster in ',
+      thenLabel: 'Then',
+      away: (d: string) => `${d} away`,
+      plate: (p: string) => `plate ${p}`,
+      riderReport: 'rider report',
+      confHigh: 'high confidence',
+      confMedium: 'medium confidence',
+      confLow: 'low confidence',
+      noCoaster: 'No coaster heading here',
+      noCoasterHint:
+        'Nothing behind this stop right now. We refresh every few seconds.',
+    },
+    fabs: {
+      nearestStop: 'Nearest stop',
+      suggestStop: 'Suggest a stop',
+      seeCoaster: 'I see a coaster',
+    },
+    dropdown: { track: 'Track' },
+    report: {
+      headerSighting: 'Report a sighting',
+      headerStop: 'Suggest a stop',
+      whereSightingTitle: 'Where did you see it?',
+      whereSightingBody: (route: string) =>
+        `Tap the map to drop a pin where you spotted a ${route} coaster.`,
+      whereStopTitle: 'Where is this new stop?',
+      whereStopBody: (route: string) =>
+        `Tap the map to drop a pin for the new stop on ${route}. New stops start as PENDING until other riders confirm them.`,
+      nameEnLabel: 'Stop name (English)',
+      nameArLabel: 'Stop name (Arabic)',
+      nameEnPlaceholder: 'e.g. Al Waha Circle',
+      nameArPlaceholder: 'مثال: دوار الواحة',
+      cancel: 'Cancel',
+      submitSighting: 'Send sighting',
+      submitStop: 'Suggest stop',
+      sending: 'Sending…',
+    },
+    sim: {
+      pocBadge: 'POC ONLY',
+      title: 'Simulation',
+      chip: 'POC simulation',
+      hint:
+        'Fakes the ML features (time_of_day, rainy) from POC.md so you can see ETAs respond. Not visible in the production app.',
+      timeOfDay: 'Time of day',
+      morningRush: 'Morning rush',
+      midday: 'Midday',
+      evening: 'Evening',
+      night: 'Night',
+      rainy: 'Rainy',
+      rainSub: 'slows coasters ~30%',
+    },
+    units: {
+      lessThanMin: '<1 min',
+      minShort: 'min',
+      hourShort: 'h',
+      minInHourShort: 'm',
+      km: 'km',
+      m: 'm',
+    },
+  },
+  ar: {
+    banner: {
+      tapStopTitle: 'اختر محطة على المسار',
+      tapStopHint:
+        'اختر أي محطة على المسار المحدد لترى متى يصل الكوستر التالي إليها.',
+      stop: 'المحطة',
+      clear: 'إلغاء',
+      pending: 'قيد المراجعة',
+      walkFromYou: (time: string, dist: string) => `${time} مشياً من موقعك · ${dist}`,
+      awaitingConfirmation: 'بانتظار التأكيد',
+      awaitingHint:
+        'راكب آخر اقترح هذه المحطة. أوقات وصول الكوستر مخفية حتى يتم تأكيدها — وإلا ستظهر أوقات مضللة من اقتراحات خاطئة.',
+      confirmButton: '✓ رأيت الكوستر يتوقف هنا',
+      coasterInPrefix: 'الكوستر خلال ',
+      thenLabel: 'ثم',
+      away: (d: string) => `على بعد ${d}`,
+      plate: (p: string) => `اللوحة ${p}`,
+      riderReport: 'بلاغ راكب',
+      confHigh: 'ثقة عالية',
+      confMedium: 'ثقة متوسطة',
+      confLow: 'ثقة منخفضة',
+      noCoaster: 'لا يوجد كوستر متجه إلى هنا',
+      noCoasterHint: 'لا يوجد كوستر خلف هذه المحطة الآن. نحدّث كل عدة ثوانٍ.',
+    },
+    fabs: {
+      nearestStop: 'أقرب محطة',
+      suggestStop: 'اقترح محطة',
+      seeCoaster: 'أرى كوستراً',
+    },
+    dropdown: { track: 'المسار' },
+    report: {
+      headerSighting: 'الإبلاغ عن مشاهدة',
+      headerStop: 'اقتراح محطة',
+      whereSightingTitle: 'أين رأيته؟',
+      whereSightingBody: (route: string) =>
+        `انقر على الخريطة لإسقاط دبوس حيث رأيت كوستر ${route}.`,
+      whereStopTitle: 'أين هذه المحطة الجديدة؟',
+      whereStopBody: (route: string) =>
+        `انقر على الخريطة لإسقاط دبوس للمحطة الجديدة على ${route}. المحطات الجديدة تبقى قيد المراجعة حتى يؤكدها ركاب آخرون.`,
+      nameEnLabel: 'اسم المحطة (بالإنجليزية)',
+      nameArLabel: 'اسم المحطة (بالعربية)',
+      nameEnPlaceholder: 'مثال: Al Waha Circle',
+      nameArPlaceholder: 'مثال: دوار الواحة',
+      cancel: 'إلغاء',
+      submitSighting: 'إرسال المشاهدة',
+      submitStop: 'اقتراح المحطة',
+      sending: 'جاري الإرسال…',
+    },
+    sim: {
+      pocBadge: 'للنموذج فقط',
+      title: 'محاكاة',
+      chip: 'محاكاة النموذج',
+      hint:
+        'يحاكي ميزات الذكاء الاصطناعي (وقت اليوم، المطر) من POC.md لترى استجابة الأوقات. غير مرئي في التطبيق النهائي.',
+      timeOfDay: 'وقت اليوم',
+      morningRush: 'ذروة الصباح',
+      midday: 'الظهيرة',
+      evening: 'المساء',
+      night: 'الليل',
+      rainy: 'ممطر',
+      rainSub: 'يبطئ الكوسترات ~30%',
+    },
+    units: {
+      lessThanMin: 'أقل من دقيقة',
+      minShort: 'د',
+      hourShort: 'س',
+      minInHourShort: 'د',
+      km: 'كم',
+      m: 'م',
+    },
+  },
+} as const;
+
+export type Lang = keyof typeof translations;
+export type Dict = (typeof translations)[Lang];
