@@ -20,16 +20,7 @@ make simple `distance ÷ speed` predictions useless.
 
 **Video walkthrough:** _coming soon._
 
-**Try it yourself (web):**
-
-```bash
-cd frontend
-npm install
-npm run web
-```
-
-Then open the printed URL (usually <http://localhost:8081>). Allow location
-when prompted; otherwise the app falls back to a default point in Amman.
+**Live demo:** <https://coaster.archbyhusam.click>
 
 ---
 
@@ -268,19 +259,6 @@ Wen-El-Coaster-POC/
 └── deploy.sh               Intended deployment sketch.
 ```
 
-## Team
-
-<!--
-  Fill these in before submitting to the AI Expo proposal.
-  Delete this HTML comment once done.
--->
-
-- **Project Title:** Wen El Coaster — وين الكوستر؟
-- **Team Name:** _TODO_
-- **Focus Sector:** GovTech / Urban Mobility
-- **Team Members:** _TODO — name, university/org, role_
-- **Team Leader:** _TODO — name, email, WhatsApp_
-
 ## License
 
-_TODO — pick one (MIT is fine unless there's a reason otherwise)._
+MIT
