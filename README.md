@@ -42,14 +42,14 @@ Amman. Rider WhatsApp groups and word-of-mouth are the current "system."
 
 ## The Solution
 
-A minimal, single-purpose app: **if you're standing on a coaster route, tell
-me if one is coming and when.** Nothing else.
+A minimal, single-purpose app: **pick your coaster route and see if one is
+coming and roughly when.** Nothing else.
 
 Design rules that shape the product:
 
-- **Track-scoped view.** You only see coasters on the track you're currently
-  standing on. Other routes are drawn as faint dashed lines for context, but
-  they never clutter the ETA banner.
+- **Route-scoped view.** You only see coasters on the route you've selected
+  from the dropdown. Other routes are drawn as faint dashed lines for context,
+  but they never clutter the ETA banner.
 - **Nearest coaster only** (for now). A short "next in 4 min, then 11 min"
   queue is planned once we have data density to make it meaningful.
 - **Bilingual, mobile-first.** Arabic and English side-by-side; the target
