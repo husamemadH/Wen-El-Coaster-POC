@@ -167,12 +167,14 @@ npm run web            # or: npm run ios / npm run android
 
 **Try this flow:**
 
-1. Pick a track on the first screen (e.g. **University of Jordan**).
-2. The map centres on you (or the Amman fallback) and shows only that track's
-   coasters. Other tracks appear as faint dashed lines.
-3. If you're within ~250 m of the highlighted polyline, the top banner shows
-   the nearest coaster's ETA. Otherwise it tells you how far off-track you
-   are.
+1. The app opens on the map with the first route pre-selected. Change it
+   from the dropdown at the top if you want (e.g. **University of Jordan**).
+2. The map shows that route's coasters, stops, and polyline. Other routes
+   appear as faint dashed lines for context.
+3. Pick a stop — tap a stop marker on the map, or press the **Nearest
+   stop** button to auto-select the closest verified stop to you. The top
+   banner then shows the next coaster's ETA to that stop (with up to three
+   more queued behind it) and your walk time from your current location.
 4. Tap **Report coaster** (bottom-right) to drop a manual pin — this is the
    crowdsourced-report path from the roadmap.
 
@@ -182,7 +184,7 @@ npm run web            # or: npm run ios / npm run android
 
 | Piece | State |
 |---|---|
-| Route selection, map, on-track detection | ✅ Working |
+| Route selection, map, stop selection (tap or nearest) | ✅ Working |
 | Nearest-coaster + rule-based ETA (distance ÷ avg speed) | ✅ Working |
 | Rider report flow (manual pin) | ✅ Working |
 | Bilingual UI (Arabic + English) | ✅ Working |
