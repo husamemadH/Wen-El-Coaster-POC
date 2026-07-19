@@ -11,14 +11,9 @@ make simple `distance ÷ speed` predictions useless.
 
 ## Demo
 
-<!--
-  Record a 2-5 minute walkthrough and either:
-  1. Drag-and-drop the .mp4 into this README on GitHub (it will upload and
-     replace the line below with a <video> tag), OR
-  2. Upload as a GitHub Release asset and paste the URL below.
--->
+**Video walkthrough:**
 
-**Video walkthrough:** _coming soon._
+https://github.com/husamemadH/Wen-El-Coaster-POC/raw/master/media/demo.mp4
 
 **Live demo:** <https://coaster.archbyhusam.click>
 
@@ -75,7 +70,6 @@ For each segment we predict travel time from:
 | `time_of_day_bucket` | Best proxy for congestion without paying for a live traffic API. |
 | `day_type` (weekday / weekend) | Amman traffic pattern shifts on Thursday and Friday. |
 | `near_stop_zone` (0/1) | Segments near known informal stopping spots take longer on average. |
-| `rainy` (0/1) | Rain visibly slows Amman traffic; optional but cheap to include. |
 
 Why gradient boosting rather than deep learning: dataset is small (tens of
 trips per route), features are tabular, and interpretability matters when we
