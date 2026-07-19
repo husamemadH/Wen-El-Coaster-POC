@@ -1,3 +1,6 @@
+
+
+
 # Wen El Coaster — وين الكوستر؟
 
 **A live tracker for Jordan's informal coaster minibuses.** Riders standing on a
@@ -13,7 +16,7 @@ make simple `distance ÷ speed` predictions useless.
 
 **Video walkthrough:**
 
-https://github.com/husamemadH/Wen-El-Coaster-POC/raw/master/media/demo.mp4
+https://github.com/user-attachments/assets/0b7cec66-0625-4146-941b-d5a3a749d2a0
 
 **Live demo:** <https://coaster.archbyhusam.click>
 
